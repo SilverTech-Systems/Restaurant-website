@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.card, .menu-item {
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    height: 500px; /* Jedinstvena visina za sve kartice */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top, .menu-item img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px; /* Jedinstvena visina za slike u karticama */
+    object-fit: cover;
+}
+
+.card-body, .menu-item .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title, .menu-item .card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-text, .menu-item .card-text {
+    flex-grow: 1;
+}
+
+.card-footer, .menu-item .card-footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+#logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.cart-item img {
+    height: 100px;
+}
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.language-switcher button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: none;
+}
+.language-switcher button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.breadcrumb {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.breadcrumb li {
+    margin-right: 5px;
+}
+.breadcrumb li a {
+    text-decoration: none;
+    color: #007bff;
+}
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.star-rating {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.star-rating .selected {
+    color: gold;
+}
+
+
+/* Default light mode styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+.navbar {
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+}
+.header, .footer, .breadcrumb, .dropdown-menu, .card, .menu-item, .gallery img, .cart-item, .about img {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+.language-switcher button {
+    color: #007bff;
+}
+.breadcrumb li a, .language-switcher button {
+    color: #007bff;
+}
+.star-rating .selected {
+    color: gold;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.navbar.dark-mode {
+    background-color: #333333;
+}
+.header.dark-mode, .footer.dark-mode, .breadcrumb.dark-mode, .dropdown-menu.dark-mode, .card.dark-mode, .menu-item.dark-mode, .gallery img.dark-mode, .cart-item.dark-mode, .about img.dark-mode {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+.language-switcher button.dark-mode {
+    color: #bb86fc;
+}
+.breadcrumb li a.dark-mode, .language-switcher button.dark-mode {
+    color: #bb86fc;
+}
+.star-rating .selected.dark-mode {
+    color: #ffd700;
+}
+
+
+.menu-item .btn-primary,
+.menu-item input[type="number"],
+.menu-item select {
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 14px;
+    width: auto;
+}
+
+.menu-item .btn-primary {
+    width: 100px;
+}
+
+.menu-item input[type="number"] {
+    width: 50px;
+}
+
+.menu-item select {
+    width: 80px;
+}
+
+.menu-item div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
