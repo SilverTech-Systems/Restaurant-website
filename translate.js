@@ -85,6 +85,7 @@ const translations = {
         dish: 'Dish',
         size: 'Size:',
         quantity: 'Quantity:',
+        averageRating: 'Average rating: '
     },
     sr: {
         home: 'Početna',
@@ -144,6 +145,7 @@ const translations = {
         dish: 'Jelo',
         size: 'Veličina:',
         quantity: 'Količina:',
+        averageRating: 'Prosečna ocena: '
     }
 };
 

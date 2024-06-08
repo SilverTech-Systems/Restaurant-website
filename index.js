@@ -68,8 +68,8 @@ function loadTopRatedDishes() {
                     <div class="card">
                         <img src="${dish.img}" class="card-img-top" alt="${dish.name}">
                         <div class="card-body">
-                            <h5 class="card-title">${dish.name}</h5>
-                            <p class="card-text">${dish.desc}</p>
+                            <h5 class="card-title" data-translate=${dish.id}Name>${dish.name}</h5>
+                            <p class="card-text" data-translate=${dish.id}Desc>${dish.desc}</p>
                             <a href="menu.html#${dish.id}" class="btn btn-primary" data-translate="orderNow">Order Now</a>
                         </div>
                     </div>

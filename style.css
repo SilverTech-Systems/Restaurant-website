@@ -200,3 +200,7 @@ body.dark-mode {
     align-items: center;
     justify-content: space-between;
 }
+
+.inline-block {
+    display: inline-block;
+}

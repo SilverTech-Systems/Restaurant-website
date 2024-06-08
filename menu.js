@@ -59,7 +59,7 @@ function updateTopRatedDishes() {
     localStorage.setItem('topRatedDishes', JSON.stringify(sortedDishes));
 }
 
-function addToCart(dishName, dishPrice) {
+function addToCart(dishId, dishName, dishPrice) {
     console.log(dishName.toLowerCase().replace(' ', '')+"Qty");
     const qtyElement = document.getElementById(`${dishName.toLowerCase().replace(/ /g, '')}Qty`);
 
@@ -75,7 +75,7 @@ function addToCart(dishName, dishPrice) {
         console.log('Quantity:', qty);
         console.log('Size:', size);
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart.push({ name: dishName, price: dishPrice, qty, size });
+        cart.push({ id: dishId, name: dishName, price: dishPrice, qty, size });
         localStorage.setItem('cart', JSON.stringify(cart));
         alert(`${dishName} added to cart`);
     } else {

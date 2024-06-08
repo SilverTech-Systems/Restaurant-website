@@ -11,7 +11,7 @@ function loadCart() {
         cartContainer.innerHTML += `
             <div class="col-md-4 cart-item">
                 <img src="dodatno/${item.name.toLowerCase().replace(/ /g, '')}.png" alt="${item.name}">
-                <h5>${item.name}</h5>
+                <h5 data-translate="${item.id}">${item.name}</h5>
                 <p data-translate="size">Size: ${item.size}</p>
                 <p data-translate="price">Price: $${item.price}</p>
                 <p data-translate="quantity">Quantity: <input type="number" value="${item.qty}" min="1" onchange="updateCart(${index}, this.value)"></p>
