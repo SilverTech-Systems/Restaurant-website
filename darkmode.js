@@ -6,6 +6,16 @@ function toggleDarkMode() {
     elements.forEach(element => {
         element.classList.toggle('dark-mode');
     });
+
+    // Toggle navbar background and theme
+    const navbar = document.querySelector('.navbar');
+    if (body.classList.contains('dark-mode')) {
+        navbar.classList.remove('bg-light', 'navbar-light');
+        navbar.classList.add('bg-dark', 'navbar-dark');
+    } else {
+        navbar.classList.remove('bg-dark', 'navbar-dark');
+        navbar.classList.add('bg-light', 'navbar-light');
+    }
 }
 
 // Optional: Save user preference for dark mode

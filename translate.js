@@ -85,7 +85,10 @@ const translations = {
         dish: 'Dish',
         size: 'Size:',
         quantity: 'Quantity:',
-        averageRating: 'Average rating: '
+        averageRating: 'Average rating: ',
+        RestaurantImages: 'Restaurant Images',
+        FoodImages: 'Food Images',
+        
     },
     sr: {
         home: 'Početna',
@@ -145,7 +148,10 @@ const translations = {
         dish: 'Jelo',
         size: 'Veličina:',
         quantity: 'Količina:',
-        averageRating: 'Prosečna ocena: '
+        averageRating: 'Prosečna ocena: ',
+        RestaurantImages: 'Slike restorana',
+        FoodImages: 'Slike hrane',
+
     }
 };
 

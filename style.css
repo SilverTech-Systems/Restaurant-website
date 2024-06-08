@@ -18,7 +18,7 @@ body {
 }
 .carousel-item img {
     width: 100%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
 }
 .card, .menu-item {
@@ -159,9 +159,12 @@ body.dark-mode {
 .navbar.dark-mode {
     background-color: #333333;
 }
-.header.dark-mode, .footer.dark-mode, .breadcrumb.dark-mode, .dropdown-menu.dark-mode, .card.dark-mode, .menu-item.dark-mode, .gallery img.dark-mode, .cart-item.dark-mode, .about img.dark-mode {
+.header.dark-mode, .footer.dark-mode, .breadcrumb.dark-mode, .card.dark-mode, .menu-item.dark-mode, .gallery img.dark-mode, .cart-item.dark-mode, .about img.dark-mode {
     background-color: #333333;
     color: #e0e0e0;
+}
+.dropdown-menu.dark-mode {
+    background-color: #383c44;
 }
 .language-switcher button.dark-mode {
     color: #bb86fc;
@@ -204,3 +207,13 @@ body.dark-mode {
 .inline-block {
     display: inline-block;
 }
+
+.restaurantgif {
+
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+
