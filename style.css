@@ -9,7 +9,7 @@ body {
     /*font-family: Arial, sans-serif;*/
     font-family: 'Nanum Brush Script', cursive;
     font-size: 1.8em;
-    background: url('dodatno/backgroundlight4.jpg') no-repeat center center fixed;
+    background: url('dodatno/backgroundlight4.webp') no-repeat center center fixed;
     background-size: cover;
 }
 .navbar {
@@ -196,14 +196,14 @@ body {
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
-    background: url('dodatno/backgrounddark.jpg') no-repeat center center fixed;
+    background: url('dodatno/backgrounddark.webp') no-repeat center center fixed;
     background-size: cover;
 }
 .navbar.dark-mode {
     background-color: #333333;
 }
 .header.dark-mode, .footer.dark-mode, .breadcrumb.dark-mode, .card.dark-mode, .menu-item.dark-mode, .gallery img.dark-mode, .cart-item.dark-mode, .about img.dark-mode {
-    background-color: #333333;
+    background-color: #383c44;
     color: #e0e0e0;
 }
 .dropdown-menu.dark-mode {
