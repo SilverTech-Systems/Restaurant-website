@@ -12,9 +12,9 @@ function loadCart() {
             <div class="col-md-4 cart-item">
                 <img src="dodatno/${item.name.toLowerCase().replace(/ /g, '')}.png" alt="${item.name}">
                 <h5 data-translate="${item.id}">${item.name}</h5>
-                <p data-translate="size">Size: ${item.size}</p>
-                <p data-translate="price">Price: $${item.price}</p>
-                <p data-translate="quantity">Quantity: <input type="number" value="${item.qty}" min="1" onchange="updateCart(${index}, this.value)"></p>
+                <p>Size: ${item.size}</p>
+                <p>Price: $${item.price}</p>
+                <p>Quantity: <input type="number" value="${item.qty}" min="1" onchange="updateCart(${index}, this.value)"></p>
                 <button class="btn btn-danger" onclick="removeFromCart(${index})">Remove</button>
             </div>
         `;
@@ -54,10 +54,10 @@ function loadOrderHistory() {
         orderHistoryContainer.innerHTML += `
             <div class="col-md-4 order-item">
                 <img src="dodatno/${order.name.toLowerCase().replace(/ /g, '')}.png" alt="${order.name}">
-                <h5>${order.name}</h5>
-                <p data-translate="size">Size: ${order.size}</p>
-                <p data-translate="price">Price: $${order.price}</p>
-                <p data-translate="quantity">Quantity: ${order.qty}</p>
+                <h5 data-translate=${order.id}>${order.name}</h5>
+                <p>Size: ${order.size}</p>
+                <p>Price: $${order.price}</p>
+                <p>Quantity: ${order.qty}</p>
             </div>
         `;
     });

@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'Nanum Brush Script';
+    src: url('dodatno/NanumBrushScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    /*font-family: Arial, sans-serif;*/
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.8em;
+    background: url('dodatno/backgroundlight4.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 .navbar {
     margin-bottom: 20px;
@@ -27,7 +38,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    height: 500px; /* Jedinstvena visina za sve kartice */
+    height: 650px; /* Jedinstvena visina za sve kartice */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -49,12 +60,13 @@ body {
 }
 
 .card-title, .menu-item .card-title {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 .card-text, .menu-item .card-text {
     flex-grow: 1;
+    font-size: 1.1em;
 }
 
 .card-footer, .menu-item .card-footer {
@@ -62,6 +74,13 @@ body {
     padding: 10px 0;
 }
 
+h1 {
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 1.3em;
+}
 
 #logo {
     width: 100px;
@@ -79,7 +98,7 @@ body {
 .language-switcher button {
     border: none;
     background: none;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0 5px;
     cursor: pointer;
     color: #007bff;
@@ -97,7 +116,17 @@ body {
     position: absolute;
     background-color: #f8f9fa;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
 }
+
+.nav-item {
+    font-size: 1.2em;
+}
+
+.navbar-brand {
+    font-size: 1.3em;
+}
+
 .breadcrumb {
     margin-top: 20px;
     background-color: #f8f9fa;
@@ -105,6 +134,7 @@ body {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.2em;
 }
 .breadcrumb li {
     margin-right: 5px;
@@ -126,12 +156,23 @@ body {
     color: gold;
 }
 
+.form-control {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
 
 /* Default light mode styles */
 body {
-    font-family: Arial, sans-serif;
+    /*font-family: Arial, sans-serif;*/
+    font-family: 'Nanum Brush Script', cursive;
     background-color: #ffffff;
     color: #000000;
+    font-size: 1.3em;
+    
 }
 .navbar {
     margin-bottom: 20px;
@@ -155,6 +196,8 @@ body {
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;
+    background: url('dodatno/backgrounddark.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 .navbar.dark-mode {
     background-color: #333333;
@@ -182,7 +225,7 @@ body.dark-mode {
 .menu-item select {
     padding: 5px 10px;
     margin: 5px;
-    font-size: 14px;
+    font-size: 15px;
     width: auto;
 }
 
@@ -221,4 +264,8 @@ body.dark-mode {
     width: 100%;
     height: 400px;
     object-fit: cover;
+}
+
+.btn {
+    font-size: 1.2em;
 }
